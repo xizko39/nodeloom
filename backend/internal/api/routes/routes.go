@@ -25,11 +25,23 @@ func SetupRoutes(router *gin.Engine) {
 		{
 			users.GET("/", handlers.GetUsers)
 			users.POST("/", handlers.CreateUser)
-
 			users.PUT("/:id", handlers.UpdateUser)
 			users.DELETE("/:id", handlers.DeleteUser)
 		}
+		workspaces := protected.Group("/workspaces")
 
-		// Add more protected route groups here as needed
+		workspaces.POST("", handlers.CreateWorkspace)
+		workspaces.GET("", handlers.GetWorkspaces)
+		workspaces.GET("/:id", handlers.GetWorkspace)
+		workspaces.PUT("/:id", handlers.UpdateWorkspace)
+		workspaces.DELETE("/:id", handlers.DeleteWorkspace)
+
+		// Node operations
+		workspaces.POST("/:id/nodes", handlers.AddNode)
+		workspaces.DELETE("/:id/nodes/:nodeId", handlers.RemoveNode)
+
+		// Edge operations
+		workspaces.POST("/:id/edges", handlers.AddEdge)
+		workspaces.DELETE("/:id/edges/:edgeId", handlers.RemoveEdge)
 	}
 }

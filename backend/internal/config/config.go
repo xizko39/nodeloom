@@ -15,9 +15,8 @@ type ServerConfig struct {
 }
 
 type SupabaseConfig struct {
-	URL            string
-	Key            string
-	ServiceRoleKey string
+	URL string
+	Key string
 }
 
 func LoadConfig() (*Config, error) {
