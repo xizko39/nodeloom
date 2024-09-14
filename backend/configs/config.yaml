@@ -1,0 +1,9 @@
+server:
+  port: 8080
+  mode: debug
+supabase:
+  url: https://qikgxznkkokmsypdcysu.supabase.co
+  service_role_key: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFpa2d4em5ra29rbXN5cGRjeXN1Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTcyNjI3Mzk1NiwiZXhwIjoyMDQxODQ5OTU2fQ.Lstq83-h1uW8rLtxYJrmo0jzRhgik8XWZefIjKdeGGE
+  key: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFpa2d4em5ra29rbXN5cGRjeXN1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjYyNzM5NTYsImV4cCI6MjA0MTg0OTk1Nn0.dym6wnoEqb7FQcghh8jgCcRgRsaK-9EeUTmJ_NO7NZU
+
+  
